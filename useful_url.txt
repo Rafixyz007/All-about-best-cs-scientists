@@ -1,0 +1,6 @@
+website to scrape: https://research.com/scientists-rankings/computer-science
+
+selenium Documentation: https://selenium-python.readthedocs.io/
+
+Gecko Driver: https://github.com/mozilla/geckodriver/releases
+
