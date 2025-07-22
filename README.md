@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 5. run the scraper
 ```bash
-python dynamic_web_scrape/scraper.py --geckodriver_path <path to geckodriver>
+python dynamic_web_scrape/scraper.py --geckodriver_path <path_to_geckodriver>
 ```
 6. you will get a file name `best_cs_scientists.csv` containing all required fields.
 
