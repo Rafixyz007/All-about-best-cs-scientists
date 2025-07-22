@@ -6,6 +6,12 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.firefox.service import Service
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--geckodriver_path', type=str, help='check where your geckodriver is in your pc and share the path')
+args = parser.parse_args()
+
 
 
 columns = ["World Rank", "National Rank", "Name", "Image URLs", "Affiliation", "Country", "D-Index", "Citations", "Publications"]
@@ -54,7 +60,7 @@ def extract_scholar_info(person):
 
 
 def main():
-    gecko_path = r"D:\master course\geckodriver-v0.36.0-win64\geckodriver.exe"
+    gecko_path = parser.geckodriver_path
     all_scholars = []
 
     for page in range(1, 21):  # Change to 21 for all pages
